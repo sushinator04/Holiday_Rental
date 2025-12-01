@@ -1,38 +1,54 @@
-# Start
 
-## Project Description
-*Chasellas 62* is a tailored rental website designed to address the unique challenges faced by vacation homeowners, particularly in the Lower Engadin region of Switzerland. Unlike mainstream platforms such as Airbnb, it prioritizes personalized interactions between homeowners and guests, streamlines the booking process, and provides tools to establish a distinctive brand identity. Developed with a robust tech stack featuring React for the frontend and Flask for the backend, the platform ensures a seamless user experience while adhering to modern web standards, including accessibility and mobile-first design. By catering to the specific needs of homeowners and enhancing guest satisfaction, *Chasellas 62* represents a step forward in creating sustainable and efficient rental solutions.
 
-## Installation
-```sh
-cd backend
-pip install .
-cd ..
-cd frontend
-npm i
-cd ..
+# Holiday Rental Booking System
+
+*A production-used full-stack booking platform for two real holiday rental properties.*
+**This repository is provided for portfolio and educational purposes only and is not intended for public execution or deployment.**
+
+---
+
+## Live Website
+
+The booking system is actively used in production and available at:
+
+ **[https://gievgia.com/faq](https://gievgia.com)**
+
+This link leads to the **public-facing guest interface**.
+All backend, admin, and deployment endpoints remain private.
+
+---
+
+## Tech Stack
+
+### **Frontend**
+
+* **TypeScript**
+* **React**
+* **CSS**
+
+### **Backend**
+
+* **Python**
+* **FastAPI**
+
+### **DevOps / Deployment**
+
+* **Docker & Docker Compose**
+* **GitLab CI/CD**
+* **Production deployment scripts**
+---
+
+## Project Structure
+
+```
+project/
+ ├── frontend/              # React + TypeScript UI
+ ├── backend/               # FastAPI backend (Python)
+ ├── docker-compose.yml     # Multi-service orchestration
+ ├── .gitlab-ci.yml         # CI/CD pipeline
+ ├── start.sh               # Deployment helper script
+ ├── Chasellas_62_Report.pdf
+ │ 
+ └── README.md
 ```
 
-## How to run
-
-### Backend
-
-You can either run `start-server` command directly on your backend terminal, or run `python -m server.router.app`.
-
-### Frontend
-
-Run `npm run dev` in your frontend terminal.
-
-### The easy way
-
-Simply execute `./start.sh` which installs and runs frontend and backend simultanesouly.
-
-*Make sure that `start.sh` is executable if not already done by using `chmod +x start.sh` in your terminal.*
-
-## Team Contribution
-All team members contributed equally to the project, with detailed roles as outlined below:
-
-- Ben Klomp: Backend development, data management, and deployment.
-- Lars Hulsbergen: Frontend design and implementation, as well as poster design.
-- Kai Tran: Frontend design and report writing.
-- Josua Bürki: Accessibility compliance, testing, deployment scripts, and report writing.
