@@ -29,10 +29,3 @@ Simply execute `./start.sh` which installs and runs frontend and backend simulta
 
 *Make sure that `start.sh` is executable if not already done by using `chmod +x start.sh` in your terminal.*
 
-## Team Contribution
-All team members contributed equally to the project, with detailed roles as outlined below:
-
-- Ben Klomp: Backend development, data management, and deployment.
-- Lars Hulsbergen: Frontend design and implementation, as well as poster design.
-- Kai Tran: Frontend design and report writing.
-- Josua Bürki: Accessibility compliance, testing, deployment scripts, and report writing.
