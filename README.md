@@ -11,7 +11,7 @@
 
 The booking system is actively used in production and available at:
 
- **[https://gievgia.com/faq](https://gievgia.com)**
+ **[https://gievgia.com](https://gievgia.com)**
 
 This link leads to the **public-facing guest interface**.
 All backend, admin, and deployment endpoints remain private.
