@@ -1,0 +1,73 @@
+.dashboard {
+  background: transparent;
+  border: solid 1px white;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+  width: var(--login-tw);
+}
+
+@media (max-width: 768px) {
+  .dashboard {
+    grid-template-columns: 1fr;
+  }
+}
+
+.dashboard small {
+  background: transparent;
+}
+
+.prev-bookings,
+.current-booking {
+  background: transparent;
+  grid-row: 1;
+  h3 {
+    background: transparent;
+    color: white;
+  }
+  .list {
+    background: transparent;
+    height: 200px;
+    overflow-y: scroll;
+  }
+}
+
+.prev-bookings {
+  grid-column: 2;
+}
+.current-booking {
+  grid-column: 1;
+}
+
+@media (max-width: 768px) {
+  .current-booking {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .prev-bookings {
+    grid-column: 1;
+    grid-row: 1;
+  }
+}
+
+.booking-log {
+  background: transparent;
+  display: flex;
+  flex-direction: row;
+
+  li {
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    color: white;
+    border-bottom: 1px solid white;
+  }
+
+  span {
+    background: transparent;
+    color: white;
+  }
+}

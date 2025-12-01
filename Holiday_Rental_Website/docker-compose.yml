@@ -1,0 +1,27 @@
+services:
+  backend:
+    build: ./backend
+    environment:
+      - FLASK_ENV=development
+      - SQLALCHEMY_DATABASE_URI=sqlite:///data/database.db
+    volumes:
+      - ./backend:/backend
+    ports:
+      - "8080:8080"
+    networks:
+      - app-network
+
+  frontend:
+    build: ./frontend
+    environment:
+      - VITE_API_URL=http://backend:8080
+    volumes:
+      - ./frontend:/frontend
+    ports:
+      - "5173:5173"
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge

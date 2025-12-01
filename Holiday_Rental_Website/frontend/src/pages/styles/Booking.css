@@ -1,0 +1,308 @@
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px var(--2nd-background-color) inset !important; /* Match your desired background color */
+  -webkit-text-fill-color: var(
+    --background-color
+  ) !important; /* Match your text color */
+}
+
+/* Adjust for smooth transitions */
+input:-webkit-autofill {
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.booking_window {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: var(--nav-height);
+  width: 100%;
+  height: calc(100% - var(--nav-height));
+  background-color: var(--2nd-background-color);
+  color: var(--background-color);
+  padding: 0;
+  overflow-y: scroll;
+
+  height: calc(100% - var(--nav-height) - var(--footer-height));
+  & header {
+    & h1 {
+      text-align: center;
+    }
+  }
+
+  & * {
+    background-color: transparent;
+    color: inherit;
+  }
+
+  & form {
+    background-color: var(--2nd-background-color);
+    color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    height: 100%;
+    margin: 0 auto;
+    padding: var(--padding-horizontal-sm) var(--padding-vertical-sm);
+  }
+}
+
+@media (max-width: 768px) {
+  .booking_window {
+    & form {
+      width: 500px;
+    }
+  }
+  .confirmationWindow {
+    padding: var(--padding-horizontal-sm) var(--padding-vertical-sm);
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .booking_window {
+    & form {
+      width: 100%;
+    }
+  }
+}
+
+.form_group {
+  background-color: inherit;
+  position: relative;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.form_field {
+  width: inherit;
+  border: 0;
+  margin-top: 20px;
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+  border-image: linear-gradient(
+      to right,
+      var(--2nd-background-color),
+      var(--secondary-color)
+    )
+    1;
+  padding: 0;
+  transition: border-color 0.2s;
+  &::placeholder {
+    color: transparent;
+  }
+
+  &:placeholder-shown ~ .form_label {
+    cursor: text;
+  }
+}
+
+.form_select {
+  appearance: none;
+  margin-top: 30px;
+  width: 100%;
+  border: 0;
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+  border-image: linear-gradient(
+      to right,
+      var(--2nd-background-color),
+      var(--secondary-color)
+    )
+    1;
+  padding: 5px;
+  font-size: var(--font-size);
+  color: var(--background-color);
+  transition: border-color 0.2s;
+  outline: none;
+}
+
+.form_select:focus,
+.form_field:focus {
+  border-width: 3px;
+  border-image: linear-gradient(
+      to right,
+      var(--2nd-background-color),
+      var(--accent-color)
+    )
+    1;
+  outline-style: hidden;
+}
+
+.form_select:valid {
+  border-width: 3px;
+  border-image: linear-gradient(to right, var(--2nd-background-color), green) 1;
+}
+
+.form_label {
+  position: absolute;
+  top: -10px;
+  z-index: 1;
+}
+
+.form_field:focus {
+  font-weight: 700;
+  border-width: 3px;
+  border-radius: var(--border-radius);
+  border-image: linear-gradient(
+      to right,
+      var(--2nd-background-color),
+      var(--accent-color)
+    )
+    1;
+}
+
+.form_field:valid {
+  border-width: 3px;
+  border-image: linear-gradient(to right, var(--2nd-background-color), green) 1;
+  color: var(--background-color);
+}
+
+.form_field {
+  required,
+  invalid {
+    box-shadow: none;
+  }
+}
+
+.date_picker-container {
+  * {
+    background-color: var(--2nd-background-color);
+    color: inherit;
+  }
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+button[type="submit"] {
+  & span {
+    text-align: center;
+  }
+  height: 40px;
+  width: 160px;
+  background-color: transparent;
+  color: var(--background-color);
+  border-radius: var(--border-radius);
+  border: 2px solid var(--background-color);
+  font-size: var(--font-size-sm);
+}
+
+button[type="submit"]:hover {
+  background-color: var(--background-color);
+  color: var(--primary-color);
+}
+
+button[type="submit"]:active {
+  background-color: var(--2nd-background-color);
+  color: green;
+  border-color: green;
+}
+
+option {
+  background-color: var(--2nd-background-color);
+  color: var(--background-color);
+}
+
+.date_picker-container {
+  height: 100px; /* fixed to keep alignment steady */
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.react-datepicker-wrapper {
+  width: 100%;
+}
+
+.react-datepicker__input-container input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  background-color: var(--background-color-2);
+  color: var(--text-color);
+  transition: border-color 0.3s ease;
+}
+
+.react-datepicker__input-container input:focus {
+  border-color: var(--primary-color);
+}
+.react-datepicker__input-container input:focus-visible {
+  outline: none;
+}
+
+.react-datepicker {
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.react-datepicker__header {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.react-datepicker__current-month,
+.react-datepicker__day-name {
+  color: var(--secondary-color);
+  text-align: center;
+}
+
+.react-datepicker__day {
+  color: var(--secondary-color);
+}
+
+.react-datepicker__day--selected,
+.react-datepicker__day--keyboard-selected {
+  background-color: var(--accent-color);
+  color: var(--secondary-color);
+}
+
+.react-datepicker__day--disabled {
+  color: var(--text-color);
+  cursor: not-allowed;
+}
+
+.confirmationWindow {
+  max-width: fit-content;
+  position: fixed;
+  top: var(--nav-height);
+  width: 600px;
+  height: calc(100vh - var(--nav-height) - var(--footer-height));
+  background-color: var(--2nd-background-color);
+  color: var(--background-color);
+  padding: var(--padding-horizontal) var(--padding-vertical);
+  header {
+    h1,
+    p {
+      text-align: center;
+    }
+  }
+  main article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  li {
+    list-style-type: none;
+  }
+}
+
+.backButton {
+  position: absolute;
+  right: var(--padding-horizontal);
+  top: 40px;
+  color: var(--background-color);
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  box-shadow: none;
+}

@@ -1,0 +1,48 @@
+{
+  "faq": [
+    {
+      "question": "Comment puis-je effectuer une réservation?",
+      "answer": "Pour effectuer une réservation, veuillez d'abord créer un compte. Cliquez sur 'Réservation' et suivez les instructions."
+    },
+    {
+      "question": "Comment puis-je annuler ma réservation?",
+      "answer": "Pour annuler votre réservation, veuillez contacter notre service client."
+    },
+    {
+      "question": "Comment puis-je modifier ma réservation?",
+      "answer": "Pour modifier votre réservation, veuillez contacter notre service client."
+    },
+    {
+      "question": "Comment puis-je consulter ma réservation?",
+      "answer": "Vous pouvez trouver vos réservations actives et passées dans votre compte sous 'Tableau de bord'."
+    },
+    {
+      "question": "Comment puis-je évaluer ma réservation?",
+      "answer": "Pour évaluer votre réservation, accédez à votre compte et cliquez sur 'Évaluation'."
+    },
+    {
+      "question": "Comment puis-je créer un compte?",
+      "answer": "Pour créer un compte, cliquez sur 'Pas encore de compte?' et suivez les instructions."
+    },
+    {
+      "question": "Comment puis-je me connecter?",
+      "answer": "Pour vous connecter, cliquez sur 'Compte' et saisissez votre adresse email et votre mot de passe."
+    },
+    {
+      "question": "Comment puis-je réinitialiser mon mot de passe?",
+      "answer": "Pour réinitialiser votre mot de passe, cliquez sur 'Mot de passe oublié?' et suivez les instructions."
+    },
+    {
+      "question": "Comment puis-je contacter le service client?",
+      "answer": "Vous pouvez contacter notre service client par email à ben.klomp@bluewin.ch ou par téléphone au +41765666172."
+    },
+    {
+      "question": "Comment puis-je supprimer mon compte?",
+      "answer": "Pour supprimer votre compte, veuillez contacter notre service client."
+    },
+    {
+      "question": "Quels modes de paiement acceptez-vous?",
+      "answer": "Nous acceptons les cartes de crédit, PayPal et les virements bancaires."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "faq": [
+    {
+      "question": "How can I make a booking?",
+      "answer": "To make a booking, please first create an account. Click on 'Booking' and follow the instructions."
+    },
+    {
+      "question": "How can I cancel my booking?",
+      "answer": "To cancel your booking, please contact our customer service."
+    },
+    {
+      "question": "How can I modify my booking?",
+      "answer": "To modify your booking, please contact our customer service."
+    },
+    {
+      "question": "How can I view my booking?",
+      "answer": "You can find your active and past bookings in your account under 'Dashboard'."
+    },
+    {
+      "question": "How can I rate my booking?",
+      "answer": "To rate your booking, go to your account and click on 'Review'."
+    },
+    {
+      "question": "How can I create an account?",
+      "answer": "To create an account, click on 'No account yet?' and follow the instructions."
+    },
+    {
+      "question": "How can I log in?",
+      "answer": "To log in, click on 'Account' and enter your email address and password."
+    },
+    {
+      "question": "How can I reset my password?",
+      "answer": "To reset your password, click on 'Forgot password?' and follow the instructions."
+    },
+    {
+      "question": "How can I contact customer service?",
+      "answer": "You can reach our customer service via email at ben.klomp@bluewin.ch or by phone at +41765666172."
+    },
+    {
+      "question": "How can I delete my account?",
+      "answer": "To delete your account, please contact our customer service."
+    },
+    {
+      "question": "Which payment methods are accepted?",
+      "answer": "We accept credit cards, PayPal, and bank transfers."
+    }
+  ]
+}

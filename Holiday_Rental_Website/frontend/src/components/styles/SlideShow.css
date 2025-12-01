@@ -1,0 +1,70 @@
+/* SlideShow.css */
+.slideshow-container {
+  margin-top: var(--nav-height);
+  padding: 0;
+  overflow: hidden;
+}
+
+.slideshow-container img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 9/5;
+  object-fit: cover;
+  margin: auto;
+}
+
+.collection-container  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.collection-container img {
+  display: inline-block;
+  width: 10%;
+  height: auto;
+  margin: auto;
+  cursor: pointer;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.collection-container img:hover {
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.back-button {
+  left: 15px;
+}
+.next-button {
+  right: 15px;
+}
+
+@media (min-width: 1024px) {
+  .slideshow-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    figure.fig-container {
+      grid-column: 1;
+    }
+
+    .next-button {
+      right: calc(50vw + 15px);
+    }
+
+    .collection-container {
+      background-size: 600% 600%;
+      animation: gradientShift 10s ease infinite;
+      padding: var(--padding-vertical-sm) var(--padding-horizontal-sm);
+      grid-column: 2;
+
+      img {
+        width: 20%;
+      }
+    }
+  }
+}

@@ -1,0 +1,249 @@
+:root {
+  --paper-background: white;
+  --paper-color: black;
+  --paper-font: "Times New Roman", Times, serif;
+}
+
+.formula {
+  background-color: transparent;
+  max-height: 100vh;
+}
+
+.formula main {
+  background: transparent;
+  max-height: 400px;
+  width: var(--login-tw);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.formula main p,
+.formula main h1 {
+  padding: 4px 8px;
+  background: inherit;
+  color: white;
+}
+.formula main button {
+  margin-top: 20px;
+  border: 1px solid white;
+  padding: 4px 8px;
+  border-radius: var(--border-radius);
+  text-align: center;
+  font-size: medium;
+  width: 150px;
+  background: inherit;
+  color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .formula main {
+    width: 100%;
+  }
+}
+
+.formula .paper {
+  background: var(--paper-background);
+  border-radius: var(--border-radius);
+  padding: var(--padding-vertical-sm) var(--padding-horizontal-sm);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    background: var(--paper-background);
+    grid-column: 1 / 2;
+    font-family: var(--paper-font);
+    color: var(--paper-color);
+    margin: 0;
+  }
+}
+
+.formula .questions {
+  width: 100%;
+  background: var(--paper-background);
+  border-radius: var(--border-radius);
+  padding: var(--padding-vertical-sm) var(--padding-horizontal-sm);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.formula .question {
+  margin: 0;
+  width: 100%;
+  background: var(--paper-background);
+  padding: 10px var(--padding-horizontal-sm);
+}
+
+.formula .question::after {
+  content: "";
+  display: block;
+  width: 90%;
+  height: 1px;
+  background: var(--paper-color);
+  margin: 0 auto;
+}
+
+.formula .question form {
+  padding: 0;
+  background: var(--paper-background);
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.formula .question p {
+  background: var(--paper-background);
+  color: var(--paper-color);
+  font-family: var(--paper-font);
+}
+
+.formula .choice {
+  padding: var(--padding-vertical-sm) var(--padding-horizontal-sm);
+  background: var(--paper-background);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-items: center;
+}
+
+.formula .choice input[type="radio"] {
+  appearance: none;
+  background: var(--paper-background);
+  margin: 0;
+  font: inherit;
+  color: var(--paper-color);
+  width: 1.15em;
+  height: 1.15em;
+  box-shadow: none;
+  transform: translateY(0.325em);
+  display: grid;
+  place-content: center;
+  box-shadow: none;
+  border: 0.125em solid var(--paper-color);
+  border-radius: 50%;
+}
+
+.formula .choice input[type="radio"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: none;
+  background: var(--paper-background);
+}
+
+.formula .choice input[type="radio"]:checked::before {
+  transform: scale(1);
+  background: var(--paper-color);
+}
+
+.formula .choice input[type="radio"]:focus {
+  outline: max(2px, 0.15em) solid var(--paper-color);
+  outline-offset: max(2px, 0.15em);
+  box-shadow: none !important;
+}
+
+.formula .choice label {
+  background: var(--paper-background);
+  color: var(--paper-color);
+  padding: var(--padding-vertical-sm) var(--padding-horizontal-sm);
+  border: none;
+  border-radius: 0;
+  box-shadow: none !important;
+}
+
+.formula .signature {
+  background: var(--paper-background);
+  padding: var(--padding-vertical-sm) var(--padding-horizontal-sm);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    background: var(--paper-background);
+    color: var(--paper-color);
+    font-family: var(--paper-font);
+  }
+
+  input[type="text"] {
+    background: var(--paper-background);
+    color: var(--paper-color);
+    border: none;
+    border-bottom: 1px solid var(--paper-color);
+    border-radius: 0;
+  }
+}
+
+.upload-bar {
+  background: var(--paper-background);
+  padding: var(--padding-vertical-sm) var(--padding-horizontal-sm);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: transparent;
+
+  button {
+    background: transparent;
+    color: white;
+
+    p {
+      background: transparent;
+      color: white;
+      text-align: center;
+    }
+  }
+
+  button:hover {
+    background: white;
+
+    p {
+      color: black;
+    }
+  }
+
+  button:active {
+    background: transparent;
+    border-color: var(--accent-color);
+
+    p {
+      color: var(--accent-color);
+    }
+  }
+
+  input[type="file"] {
+    background: transparent;
+    color: white;
+    border: none;
+    border-bottom: 2px solid white;
+    border-radius: 0;
+  }
+}
+
+button.send-btn {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button.send-btn:hover {
+  background: var(--accent-color);
+}
+button.send-btn:active {
+  background: var(--transparent-background-color-accent);
+  border-color: white;
+}

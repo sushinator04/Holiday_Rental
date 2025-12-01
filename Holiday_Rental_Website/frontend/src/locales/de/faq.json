@@ -1,0 +1,48 @@
+{
+  "faq": [
+    {
+      "question": "Wie kann ich eine Buchung vornehmen?",
+      "answer": "Um eine Buchung vorzunehmen, erstellen Sie bitte zuerst ein Account. Klicken Sie auf 'Buchung' und folgen Sie den Anweisungen."
+    },
+    {
+      "question": "Wie kann ich meine Buchung stornieren?",
+      "answer": "Um Ihre Buchung zu stornieren, kontaktieren Sie bitte unseren Kundendienst."
+    },
+    {
+      "question": "Wie kann ich meine Buchung ändern?",
+      "answer": "Um Ihre Buchung zu ändern, kontaktieren Sie bitte unseren Kundendienst."
+    },
+    {
+      "question": "Wie kann ich meine Buchung einsehen?",
+      "answer": "Ihre aktive und letzte Buchungen finden Sie in Ihrem Account unter 'Dashboard'."
+    },
+    {
+      "question": "Wie kann ich meine Buchung bewerten?",
+      "answer": "Um Ihre Buchung zu bewerten, gehen Sie zu Ihrem Account und klicken Sie auf 'Bewertung'."
+    },
+    {
+      "question": "Wie kann ich ein Account erstellen?",
+      "answer": "Um ein Account zu erstellen, klicken Sie auf 'Noch kein Konto?' und folgen Sie den Anweisungen."
+    },
+    {
+      "question": "Wie kann ich mich einloggen?",
+      "answer": "Um sich einzuloggen, klicken Sie auf 'Account' und geben Sie Ihre E-Mail-Adresse und Ihr Passwort ein."
+    },
+    {
+      "question": "Wie kann ich mein Passwort zurücksetzen?",
+      "answer": "Um Ihr Passwort zurückzusetzen, klicken Sie auf 'Passwort vergessen?' und folgen Sie den Anweisungen."
+    },
+    {
+      "question": "Wie kann ich den Kundendienst kontaktieren?",
+      "answer": "Sie können unseren Kundendienst per E-Mail unter ben.klomp@bluewin.ch oder telefonisch unter +41765666172 erreichen."
+    },
+    {
+      "question": "Wie kann ich mein Konto löschen?",
+      "answer": "Um Ihr Konto zu löschen, kontaktieren Sie bitte unseren Kundendienst."
+    },
+    {
+      "question": "Welche Zahlungsmethoden werden akzeptiert?",
+      "answer": "Wir akzeptieren Kreditkarten, PayPal und Banküberweisungen."
+    }
+  ]
+}

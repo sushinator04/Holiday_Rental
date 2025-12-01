@@ -1,0 +1,230 @@
+:root {
+  --login-tw: 600px;
+  --blur: 15px;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --login-tw: 350px;
+  }
+}
+
+.logout {
+  border: none;
+  box-shadow: none;
+  background: transparent;
+  position: absolute;
+  right: var(--padding-horizontal);
+  top: calc(var(--nav-height) + var(--padding-vertical));
+  z-index: 1005;
+}
+
+@media (max-width: 1024px) {
+  .logout {
+    top: 18px;
+    right: calc(var(--padding-horizontal) * 2 + 10px);
+  }
+}
+
+@media (max-width: 768px) {
+  .logout {
+    top: 15px;
+    right: calc(var(--padding-horizontal) * 2 + 10px);
+  }
+}
+
+.logout:hover {
+  transform: scale(1.1);
+}
+
+.login {
+  background-image: url("/assets/home/home0.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - var(--nav-height));
+  overflow-y: hidden !important;
+}
+
+.login header {
+  margin-top: var(--nav-height);
+  padding: var(--padding-vertical-sm) 0;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.login h1 {
+  background: transparent;
+  color: white;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.login > main {
+  background: transparent;
+}
+
+.login section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  width: var(--login-tw);
+}
+
+@media (max-width: 768px) {
+  .login section {
+    margin-bottom: 30px;
+  }
+}
+
+.login .login-section {
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
+
+.login form {
+  display: grid;
+  gap: 10px 0;
+  grid-template-columns: 40px auto;
+  width: 400px;
+  background: transparent;
+  backdrop-filter: blur(var(--blur));
+  padding: var(--padding-vertical) var(--padding-horizontal);
+  border-radius: 20px;
+}
+
+.login form label {
+  background: transparent;
+  backdrop-filter: blur(var(--blur));
+  border: 1px solid white;
+  border-radius: var(--border-radius) 0 0 var(--border-radius);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1;
+  aspect-ratio: 1;
+  height: 40px;
+}
+
+.login form input {
+  color: black;
+  border: white;
+  border-radius: 0 var(--border-radius) var(--border-radius) 0;
+  grid-column: 2;
+  height: 40px;
+}
+
+.login form small {
+  color: black;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-column: 1 / span 2;
+  a {
+    background: transparent;
+  }
+}
+
+.login .icon {
+  background: transparent;
+}
+
+.login .login-btn {
+  transform: translateY(-20px);
+  background: transparent;
+  backdrop-filter: blur(var(--blur));
+  border: solid 1px white;
+  border-radius: var(--border-radius);
+  grid-column: 1 / span 2;
+  height: 40px;
+  text-align: center;
+}
+
+.login .login-btn:active {
+  background-color: transparent;
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.login .tabs {
+  padding: var(--padding-vertical-sm) var(--padding-horizontal-sm);
+  background: transparent;
+  backdrop-filter: blur(var(--blur));
+  width: (var(--login-tw));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--gap-size);
+  border-radius: 20px;
+}
+
+@keyframes accentToWhite {
+  0% {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+  }
+  100% {
+    color: white;
+    border-color: white;
+  }
+}
+
+.login .tablist {
+  width: 100%;
+  background: transparent;
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+}
+
+.login .tablist .active {
+  animation: accentToWhite 5s forwards;
+}
+
+.login .tablist .active:hover,
+.login .tablist :hover {
+  color: var(--accent-color) !important;
+  border-color: var(--accent-color) !important;
+}
+
+.login .tab {
+  background: transparent;
+  border: 1px solid white;
+  border-radius: var(--border-radius);
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  color: white;
+  font-size: large;
+  font-weight: bold;
+}
+
+.guest-btn {
+  background: transparent;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-size: large;
+  text-decoration: underline;
+  width: 100%;
+  justify-content: center;
+}
+
+.guest-btn:hover {
+  color: var(--accent-color);
+}

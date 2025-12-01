@@ -1,0 +1,18 @@
+.footer {
+  display: flex;
+  justify-content: space-around;
+  height: var(--footer-height);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 7px 8px;
+  z-index: 100;
+
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  background-color: var(--2nd-background-color);
+  color: var(--background-color);
+  * {
+    background-color: transparent;
+    color: inherit;
+  }
+}

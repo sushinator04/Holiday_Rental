@@ -1,0 +1,48 @@
+{
+  "faq": [
+    {
+      "question": "Come posso effettuare una prenotazione?",
+      "answer": "Per effettuare una prenotazione, crea prima un account. Clicca su 'Prenotazione' e segui le istruzioni."
+    },
+    {
+      "question": "Come posso annullare la mia prenotazione?",
+      "answer": "Per annullare la tua prenotazione, contatta il nostro servizio clienti."
+    },
+    {
+      "question": "Come posso modificare la mia prenotazione?",
+      "answer": "Per modificare la tua prenotazione, contatta il nostro servizio clienti."
+    },
+    {
+      "question": "Come posso visualizzare la mia prenotazione?",
+      "answer": "Puoi trovare le tue prenotazioni attive e passate nel tuo account sotto 'Dashboard'."
+    },
+    {
+      "question": "Come posso valutare la mia prenotazione?",
+      "answer": "Per valutare la tua prenotazione, accedi al tuo account e clicca su 'Valutazione'."
+    },
+    {
+      "question": "Come posso creare un account?",
+      "answer": "Per creare un account, clicca su 'Non hai ancora un account?' e segui le istruzioni."
+    },
+    {
+      "question": "Come posso accedere?",
+      "answer": "Per accedere, clicca su 'Account' e inserisci la tua email e la tua password."
+    },
+    {
+      "question": "Come posso reimpostare la mia password?",
+      "answer": "Per reimpostare la tua password, clicca su 'Password dimenticata?' e segui le istruzioni."
+    },
+    {
+      "question": "Come posso contattare il servizio clienti?",
+      "answer": "Puoi contattare il nostro servizio clienti via email a ben.klomp@bluewin.ch o telefonicamente al numero +41765666172."
+    },
+    {
+      "question": "Come posso eliminare il mio account?",
+      "answer": "Per eliminare il tuo account, contatta il nostro servizio clienti."
+    },
+    {
+      "question": "Quali metodi di pagamento accettate?",
+      "answer": "Accettiamo carte di credito, PayPal e bonifici bancari."
+    }
+  ]
+}
